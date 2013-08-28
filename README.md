@@ -1,2 +1,16 @@
 put-a-bird-on-it
 ================
+<div>Javascript Bookmarklet that puts a bird on it, on hover.</div>
+<div>Just drag the link to your bookmarks</div>
+<a href="javascript: (function(){
+		var css = '@font-face {font-family: \'PBIFontAwesome\';src: url(\'//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?v=3.2.1\');src: url(\'//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?#iefix&v=3.2.1\') format(\'embedded-opentype\'), url(\'//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff?v=3.2.1\') format(\'woff\'), url(\'//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.ttf?v=3.2.1\') format(\'truetype\'), url(\'//netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1\') format(\'svg\');font-weight: normal;font-style: normal;}a:hover{position:relative;display:inline-block;overflow:visible;}a:hover:before{font-family: \'PBIFontAwesome\';font-size: 5em;color: #D55D28;content:\'\\f099\';position:absolute;left:0;right:0;text-align:center;bottom:100%;}';
+		var s = document.createElement('style');
+		s.type = 'text/css';
+		if (s.styleSheet){
+		  s.styleSheet.cssText = css;
+		} else {
+		  s.appendChild(document.createTextNode(css));
+		}
+		document.body.appendChild(s);
+		})();">Put a bird on it </a>
+		
